@@ -1,45 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bar SION</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>SION Surf Hawaiian DJ Bar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans JP',sans-serif;color:#333;line-height:1.6;background:#fafafa}
+    header{height:60vh;min-height:400px;background:url('images/4997F21F-E0A8-4915-90D3-4A0396A1BBF5.jpeg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.6)}
+    header h1{font-size:3rem;letter-spacing:.1em;margin:0}
+    nav{background:#111;padding:.5rem 1rem;position:sticky;top:0;z-index:100}
+    nav ul{display:flex;gap:1rem;padding:0;margin:0;list-style:none;justify-content:center}
+    nav a{color:#fff;text-decoration:none;font-weight:600}
+    section{padding:4rem 1rem;max-width:1200px;margin:auto}
+    .two-col{display:flex;flex-wrap:wrap;gap:2rem}
+    .two-col img{width:100%;max-width:500px;border-radius:8px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+    .gallery img{width:100%;height:200px;object-fit:cover;border-radius:4px;cursor:pointer;transition:.3s transform}
+    .gallery img:hover{transform:scale(1.05)}
+    footer{background:#111;color:#eee;padding:2rem 1rem;text-align:center}
+    /* lightbox */
+    #lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center}
+    #lightbox img{max-width:90%;max-height:80%;border-radius:4px}
+    #lightbox:target{display:flex}
+    a.btn{display:inline-block;background:#0077be;color:#fff;padding:.75rem 1.25rem;border-radius:4px;text-decoration:none;font-weight:600;margin-top:1rem}
+</style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="SIONロゴ" class="logo">
-    <h1>Bar SION</h1>
-    <p>ハワイアン×音楽のリゾート空間</p>
-    <p>OPEN：21:00〜 / CLOSE：翌 4:00　|　不定休</p>
-    <a href="https://www.instagram.com/sion_bar_10" target="_blank">@sion_bar_10</a>
-  </header>
 
-  <section class="menu">
-    <h2>メニュー</h2>
+<nav>
     <ul>
-      <li>軽食</li>
-      <li>サワー各種</li>
-      <li>ビール各種</li>
-      <li>シャンパン各種</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-  </section>
+</nav>
 
-  <section class="gallery">
-    <h2>ギャラリー</h2>
-    <div class="gallery-container">
-      <img src="img1.jpeg" alt="テーブル席内観">
-      <img src="img2.jpeg" alt="レーザー照明の内観">
-      <img src="img3.jpeg" alt="ターンテーブル画像">
-      <img src="img4.jpeg" alt="DJブース全体">
-      <img src="img5.jpeg" alt="追加画像5">
-      <img src="img6.jpeg" alt="追加画像6">
+<header>
+    <h1>Surf × Hawaiian × DJ<br>BAR SION</h1>
+</header>
+
+<section id="about">
+    <h2>About SION</h2>
+    <div class="two-col">
+        <img src="images/31C9FEBD-7F91-4569-8DF3-94B9678A9A32.jpeg" alt="Bartender at SION with colourful popcorn jar">
+        <p>
+            BAR SION は、京王線「聖蹟桜ヶ丘」駅から徒歩2分。<br>
+            サーフボードが天井に吊るされた店内では、レゲエやハウスが流れ、DJブースやカラオケも自由に楽しめます。<br>
+            仲間とのパーティーも、しっぽり二軒目使いも、大歓迎。ハワイアンテイストのリラックス空間で、トロピカルドリンクやクラフトビール “KONA Big Wave” などをご堪能ください。
+        </p>
     </div>
-  </section>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Bar SION. All rights reserved.</p>
-  </footer>
+<section id="gallery" style="background:#fff">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <a href="#img1"><img src="images/430A4A9E-A05A-42B6-A587-E1F05CDAC392.jpeg" alt="DJ booth close‑up"></a>
+        <a href="#img2"><img src="images/B09CA08F-0B3A-4541-B7BB-A39DA777E28B.jpeg" alt="DJ controller glowing at night"></a>
+        <a href="#img3"><img src="images/43286178-9205-44F1-B1EF-0FA90A0CCA8B.jpeg" alt="Jose Cuervo shot glasses"></a>
+        <a href="#img4"><img src="images/DEEAC6D4-1260-436F-AC30-2175A8CFA7AD.jpeg" alt="Colourful bar counter display"></a>
+        <a href="#img5"><img src="images/5EBF17A3-AE0B-4223-B570-D889AA02AF3F.jpeg" alt="Backbar with Big Wave sign"></a>
+        <a href="#img6"><img src="images/788245D3-634E-4337-9D99-36B2ED0F6958.jpeg" alt="Cozy lounge area wide view"></a>
+        <a href="#img7"><img src="images/4997F21F-E0A8-4915-90D3-4A0396A1BBF5.jpeg" alt="Lounge seating with surfboard ceiling decor"></a>
+        <a href="#img8"><img src="images/E04FEFCD-EE70-42AC-8B3E-EF9C80F7F4B3.jpeg" alt="KONA Big Wave beer bottle"></a>
+    </div>
+</section>
+
+<section id="info">
+    <h2>Store Info</h2>
+    <p>
+        〒206‑0011 東京都多摩市関戸2‑24‑26 加瀬ビル117 3F<br>
+        京王線 聖蹟桜ヶ丘駅 東口より徒歩2分<br>
+        TEL : <a href="tel:0424000626">042‑400‑0626</a><br>
+        営業時間 : 20:00 / 21:00 〜 翌4:00 (木曜定休)<br>
+        5名以上で貸切可・DJブース＆カラオケ無料
+    </p>
+    <a class="btn" href="https://maps.app.goo.gl/hWN3dJhwPy28LwaG9" target="_blank">Google Map を開く</a>
+</section>
+
+<section id="contact" style="background:#fff">
+    <h2>Contact / SNS</h2>
+    <p>
+        Instagram : <a href="https://www.instagram.com/sion_bar_10" target="_blank">@sion_bar_10</a><br>
+        お問い合わせやイベント詳細は DM までお気軽に！
+    </p>
+</section>
+
+<footer>
+    &copy; 2025 Surf Hawaiian DJ Bar SION. All Rights Reserved.
+</footer>
+
+<!-- Lightbox layers -->
+<div id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+// simple lightbox
+document.querySelectorAll('.gallery a').forEach((a)=>{
+    a.addEventListener('click', e=>{
+        e.preventDefault();
+        const href = a.querySelector('img').getAttribute('src');
+        document.getElementById('lightbox-img').src = href;
+        location.hash = 'lightbox';
+    });
+});
+document.getElementById('lightbox').addEventListener('click', ()=>{
+    location.hash = '';
+});
+</script>
+
 </body>
 </html>
